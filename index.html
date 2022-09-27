@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" type="text/css">
   
   <title>Frontend Mentor | Order summary card</title>
@@ -16,20 +16,28 @@
 <body>
   <main>
     <img src="./images/illustration-hero.svg" class="illustration" alt="illustration"/>
-    <h1>Order Summary</h1>
-    <h2>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</h2>
-    <div class="plan-container">
-      <section class="annual-plan">
-        <p>Annual Plan</p>
-        <p>$59.99/year</p>
-      </section>
-      <section class="change">
-        <p>Change</p>
-      </section>
+    <div class="card-content">
+      <div class="heading-container">
+        <h1>Order Summary</h1>
+        <h2>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</h2>
+      </div>
+  
+      <div class="plan-container">
+        <section class="annual-plan">
+          <img src="./images/icon-music.svg" class="music-icon" alt="music icon"/>
+          <div class="plan-content">
+            <p class="annual-plan-text">Annual Plan</p>
+            <p class="price">$59.99/year</p>
+          </div>
+        </section>
+        <section class="change">
+          <p class="change-text">Change</p>
+        </section>
+      </div>
+  
+      <button class="payment">Proceed to Payment</button>
+      <button class="cancel">Cancel Order</button>
     </div>
-
-    <button class="payment">Proceed to Payment</button>
-    <button class="cancel">Cancel Order</button>
   </main>
 </body>
 </html>

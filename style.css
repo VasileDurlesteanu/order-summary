@@ -7,6 +7,8 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    /* active */
+    --active-blue: 	hsl(245, 83%, 68%);
 }
 
 * {
@@ -33,12 +35,111 @@ main {
     flex-direction: column;
     background-color: white;
     border-radius: 0.625rem;
+    max-width: 20.625rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 31.25rem;
+    margin: 1.875rem 1.25rem;
+}
+
+img {
+    max-width: inherit;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.heading-container {
+    text-align: center;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color:var(--dark-blue);
 }
 
 h2 {
-    font-size: 16px;
+    margin: 0.938rem 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color:var(--desaturated-blue);
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 0.625rem;
+    height: 5rem;
+}
+
+.annual-plan {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+
+.music-icon {
+    margin: 1rem;
+}
+
+.annual-plan-text {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.price {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.change {
+    margin: 1rem;
+}
+
+.change-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+
+button {
+    font-size: 0.75rem;
+    border: none;
+}
+
+.payment {
+    background-color: var(--bright-blue);
+    color: white;
+    margin: 1.25rem 0;
+    padding: 0.75rem 0;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0.938rem 1.25rem var(--pale-blue);
+}
+
+.cancel {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.change-text:hover {
+    text-decoration: none;
+    color: var(--active-blue);
+    cursor: pointer;
+}
+
+.payment:hover {
+    background-color: var(--active-blue);
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
 }
