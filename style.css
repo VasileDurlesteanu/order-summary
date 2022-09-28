@@ -61,7 +61,7 @@ h1 {
     color:var(--dark-blue);
 }
 
-h2 {
+.main-content {
     margin: 0.938rem 0;
     font-size: 0.875rem;
     font-weight: 500;
@@ -137,6 +137,7 @@ button {
 .payment:hover {
     background-color: var(--active-blue);
     cursor: pointer;
+    transition: background-color 1s;
 }
 
 .cancel:hover {
